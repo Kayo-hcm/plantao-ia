@@ -141,6 +141,7 @@ professor.html                painel do professor (lista de grupos, porte e rela
 css/style.css                 base, painéis, HUD, barra de baixo e telas (paleta CDIA.Saúde, fontes Fredoka e Nunito)
 css/visual.css                hospital isométrico, avatares, cenas, cartas, limiar, painel, vestiário, crachá, animações
 img/                          logos e favicon da CDIA.Saúde
+video/                        vídeo de apresentação (MP4, 1min26s, com narração e legenda), capa e legenda em .vtt
 js/config.js                  URL do Apps Script, justificativa obrigatória (sem mínimo) e atualização
 js/conteudo/base.js           portes do hospital, funções, setores, indicadores, os 30 dias, sorteio e os 5 modelos da urgência
 js/conteudo/tarefas-gestao.js Diretoria e Compras (G1–G6, F1, F3, F5)

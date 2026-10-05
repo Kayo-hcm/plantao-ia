@@ -310,6 +310,13 @@ body.em-jogo .banner-demo { display: none; }
 .hv-sub { font-family: var(--titulo); font-weight: 500; font-size: 23px; color: var(--tinta2); margin: 10px 0 12px; }
 .hv-txt { font-size: 16.5px; max-width: 530px; background: rgba(255, 255, 255, .85); border-radius: var(--r3); padding: 14px 18px; box-shadow: var(--s1); }
 .hv-cont { display: block; margin-top: 6px; color: var(--tinta2); }
+.hv-video { margin-top: 14px; }
+.hv-video svg { flex: none; }
+.video-apres { max-width: 980px; margin: 0 auto; }
+.video-apres video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; background: #0E1B33; box-shadow: 0 14px 36px rgba(14, 27, 51, .28); }
+.transcricao { margin-top: 12px; padding: 10px 14px; border-radius: 12px; background: var(--fundo2, #F3F6FB); }
+.transcricao summary { cursor: pointer; font-weight: 700; color: var(--navy, #1A335B); }
+.transcricao p { margin-top: 8px; line-height: 1.55; }
 .hv-predio { position: relative; z-index: 1; }
 .predio-iso { width: 100%; height: auto; display: block; filter: drop-shadow(0 18px 24px rgba(20, 40, 70, .18)); }
 .home-janelas { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }

@@ -261,6 +261,7 @@
     h += '<section class="hotel-vista">' + VIS.nuvens(6) + '<div class="hv-texto"><h1 class="logo">Plantão <span>IA</span></h1>' +
       '<p class="hv-sub">30 dias para decidir melhor</p><p class="hv-txt">Um jogo cooperativo para <b>2 a 5 pessoas</b>. Vocês assumem o programa de Inteligência Artificial de um hospital por um mês: escolhem modelos, testam o modelo em casos reais do plantão, enfrentam um incidente inesperado — e explicam o porquê de cada decisão.</p>' +
       (ultima && ultima.codigo ? '<button class="btn azul grande" data-acao="continuar">' + px('seta', 18) + 'Continuar como ' + esc(ultima.nome) + '</button><small class="hv-cont">' + esc(ultima.nome_hospital || ultima.codigo) + '</small>' : '') +
+      '<a class="btn grande hv-video" href="#video-apresentacao"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>Ver como se joga (vídeo de 1 min)</a>' +
       '</div><div class="hv-predio">' + VIS.predio() + '</div></section>';
     h += '<div class="home-janelas">' +
       janela('Fundar um hospital', 'hotel', '<form data-form="criar"><p class="suave">Uma pessoa do grupo cria o hospital e compartilha o código.</p>' +
@@ -271,6 +272,10 @@
         '<label>Código do hospital<input name="codigo" maxlength="5" required value="' + esc(cod) + '" placeholder="Ex.: K7Q2M" class="codigo-input"></label>' +
         '<label>Seu nome<input name="nome" maxlength="40" required placeholder="Como os colegas vão te ver"></label>' +
         '<button class="btn navy grande" type="submit">' + px('seta', 18) + 'Entrar</button></form>', { cls: 'jan-form' }) + '</div>';
+    h += janela('Como se joga, em pouco mais de um minuto', 'tela', '<div class="video-apres">' +
+      '<video controls preload="none" playsinline poster="video/capa.jpg" aria-describedby="transcricao-video">' +
+      '<source src="video/plantao-ia-apresentacao.mp4" type="video/mp4">Seu navegador não reproduz vídeos. <a href="video/plantao-ia-apresentacao.mp4">Baixe o vídeo</a>.</video>' +
+      '<details class="transcricao" id="transcricao-video"><summary>Ler a transcrição do vídeo</summary><p>' + esc(TRANSCRICAO_VIDEO) + '</p></details></div>', { cls: 'jan-larga', id: 'video-apresentacao' });
     h += janela('Três hospitais, conforme o tamanho da equipe', 'hotel', '<div class="portes">' + G.PORTE_ORDEM.map(function (k) {
       var Pt = G.PORTES[k];
       return '<article class="porte-card porte-' + k + '"><header><b>' + esc(Pt.nome) + '</b><span class="pill">' + esc(Pt.jogadores) + '</span></header><p>' + esc(Pt.resumo) + '</p>' +
@@ -289,6 +294,16 @@
     return h + '</div>' + rodapeCdia();
   }
   var CDIA = { site: 'https://cdiasaude.upecaruaru.com.br/', instagram: 'https://www.instagram.com/cdia.saude/' };
+  var TRANSCRICAO_VIDEO = 'Bem-vindo ao Plantão IA! Trinta dias de plantão num hospital que decidiu usar inteligência artificial. ' +
+    'Vocês jogam em equipe, de 2 a 5 pessoas. Alguém cria o hospital e compartilha o código; cada um escolhe uma função, monta o avatar e pega o crachá. ' +
+    'Todo dia surgem novas tarefas no mapa do hospital. Toda decisão pede uma justificativa: o porquê é o que mais importa. ' +
+    'Na primeira semana, a equipe escolhe o modelo de IA que vai apoiar a triagem, compara sensibilidade e especificidade e ajusta o limiar do alerta. ' +
+    'A partir do dia 9, chega um paciente por dia. O médico vê a ficha e o escore do modelo, e decide: aceita ou não o alerta? Depois vem o desfecho: acerto, alarme falso ou um caso grave que passou. ' +
+    'A cada sete dias, a equipe se reúne, analisa a semana e define prioridades. ' +
+    'Na terceira semana, uma crise testa tudo: dengue, enchente, surto respiratório, ataque cibernético, superbactéria ou acidente com múltiplas vítimas. ' +
+    'Cada escolha mexe nos indicadores do hospital: segurança, eficiência, confiança, ética e LGPD, dados e orçamento. ' +
+    'O Plantão IA faz parte da disciplina Fundamentos de Machine Learning: as decisões e as justificativas da equipe fazem parte da avaliação. ' +
+    'Um modelo só é bom quando alguém decide melhor por causa dele. Bom plantão!';
   function rodapeCdia() {
     return '<footer class="rodape-cdia"><div class="rodape-in"><a href="' + CDIA.site + '" target="_blank" rel="noopener" class="cdia-logo"><img src="img/cdia-horizontal-branco.png" alt="CDIA.Saúde" width="180" height="45"></a>' +
       '<p>Conteúdo complementar da disciplina <b>Fundamentos de Machine Learning</b>, por <b>Prof. Kayo Henrique</b>.<small>Especialização em Ciência de Dados e Inteligência Artificial Aplicadas à Saúde · UPE Caruaru</small></p>' +

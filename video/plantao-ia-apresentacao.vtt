@@ -1,0 +1,85 @@
+WEBVTT
+
+1
+00:00:01.220 --> 00:00:03.148
+Bem-vindo ao Plantão IA!
+
+2
+00:00:03.168 --> 00:00:07.941
+Trinta dias de plantão num hospital que decidiu usar inteligência artificial.
+
+3
+00:00:08.131 --> 00:00:11.079
+Vocês jogam em equipe, de 2 a 5 pessoas.
+
+4
+00:00:11.099 --> 00:00:15.448
+Alguém cria o hospital e compartilha o código; cada um escolhe uma função,
+
+5
+00:00:15.468 --> 00:00:17.690
+monta o avatar e pega o crachá.
+
+6
+00:00:17.880 --> 00:00:21.171
+Todo dia surgem novas tarefas no mapa do hospital.
+
+7
+00:00:21.191 --> 00:00:25.603
+Toda decisão pede uma justificativa: o porquê é o que mais importa.
+
+8
+00:00:25.793 --> 00:00:30.155
+Na primeira semana, a equipe escolhe o modelo de IA que vai apoiar a triagem,
+
+9
+00:00:30.175 --> 00:00:34.665
+compara sensibilidade e especificidade e ajusta o limiar do alerta.
+
+10
+00:00:34.855 --> 00:00:37.934
+A partir do dia 9, chega um paciente por dia.
+
+11
+00:00:37.954 --> 00:00:42.407
+O médico vê a ficha e o escore do modelo, e decide: aceita ou não o alerta?
+
+12
+00:00:42.427 --> 00:00:47.008
+Depois vem o desfecho: acerto, alarme falso ou um caso grave que passou.
+
+13
+00:00:47.198 --> 00:00:52.092
+A cada sete dias, a equipe se reúne, analisa a semana e define prioridades.
+
+14
+00:00:52.282 --> 00:00:55.081
+Na terceira semana, uma crise testa tudo:
+
+15
+00:00:55.101 --> 00:01:01.838
+dengue, enchente, surto respiratório, ataque cibernético, superbactéria ou acidente com múltiplas vítimas.
+
+16
+00:01:02.028 --> 00:01:05.069
+Cada escolha mexe nos indicadores do hospital:
+
+17
+00:01:05.089 --> 00:01:09.769
+segurança, eficiência, confiança, ética e LGPD, dados e orçamento.
+
+18
+00:01:09.959 --> 00:01:13.925
+O Plantão IA faz parte da disciplina Fundamentos de Machine Learning:
+
+19
+00:01:13.945 --> 00:01:18.424
+as decisões e as justificativas da equipe fazem parte da avaliação.
+
+20
+00:01:18.614 --> 00:01:22.249
+Um modelo só é bom quando alguém decide melhor por causa dele.
+
+21
+00:01:22.269 --> 00:01:24.123
+Bom plantão!
